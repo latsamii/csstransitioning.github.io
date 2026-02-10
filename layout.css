@@ -1,159 +1,160 @@
-* { box-sizing: border-box; }
+*{box-sizing:border-box}
 
 body{
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  min-height: 100vh;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  display:flex;
+  min-height:100vh
 }
 
 #menuItems{
-  width: 260px;
-  background: #000;
-  padding: 0;
+  width:260px;
+  background:#000;
+  padding:0
 }
 
 #menuItems button{
-  width: 100%;
-  display: block;
-  padding: 14px 10px;
-  font-size: 20px;
-  color: #fff;
-  background: #0000cc;
-  border: 1px solid #222;
-  cursor: pointer;
+  width:100%;
+  display:block;
+  padding:14px 10px;
+  font-size:20px;
+  color:#fff;
+  background:#0000cc;
+  border:1px solid #222;
+  cursor:pointer
 }
 
 #menuItems button:hover{
-  background: #b8860b;
+  background:#b8860b
 }
 
 #jumpMenu{
-  list-style: none;
-  margin: 0;
-  padding: 8px 0;
-  background: #b8860b;
-  display: none;
+  list-style:none;
+  margin:0;
+  padding:8px 0;
+  background:#b8860b;
+  display:none
 }
 
 #recentArticles:hover + #jumpMenu,
 #jumpMenu:hover{
-  display: block;
+  display:block
 }
 
 #jumpMenu li{
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0
 }
 
 #jumpMenu a{
-  display: block;
-  padding: 3px 0;
-  text-align: center;
-  text-decoration: none;
-  color: #0000cc;
-  background: transparent;
+  display:block;
+  padding:3px 0;
+  text-align:center;
+  text-decoration:none;
+  color:#0000cc;
+  background:transparent
 }
 
 #jumpMenu a:hover{
-  color: #fff;
-  background: #0000cc;
+  color:#fff;
+  background:#0000cc
 }
 
 main{
-  flex: 1;
-  background: #fff;
+  flex:1;
+  background:#fff
 }
 
 header{
-  background: red;
-  padding: 30px 0 35px;
-  text-align: center;
-  border-bottom: 2px solid #777;
+  background:red;
+  padding:30px 0 35px;
+  text-align:center;
+  border-bottom:2px solid #777
 }
 
 header p{
-  margin: 0;
-  font-size: 44px;
-  color: #000;
+  margin:0;
+  font-size:44px;
+  color:#000
 }
 
 h1{
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 44px;
-  margin: 25px 0;
+  text-align:center;
+  font-family:"Times New Roman",Times,serif;
+  font-size:44px;
+  margin:25px 0
 }
 
 #container{
-  width: min(1200px, 92%);
-  margin: 0 auto 20px;
-  display: flex;
-  gap: 36px;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  width:min(1200px,92%);
+  margin:0 auto 20px;
+  display:flex;
+  gap:36px;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap
 }
 
 article{
-  flex: 1 1 220px;
-  min-width: 220px;
-  padding: 10px 10px 18px;
-  color: #b3b3b3;
-  overflow: hidden;
-  max-height: 260px;
-  transition: max-height 2s ease, color 2s ease;
+  flex:1 1 220px;
+  min-width:220px;
+  padding:10px 10px 18px;
+  color:#b3b3b3;
+  overflow:hidden;
+  max-height:260px;
+  transition:max-height 2s ease,color 2s ease
 }
 
 article h2{
-  margin: 0 0 10px;
-  font-size: 22px;
-  font-weight: 700;
-  color: inherit;
+  margin:0 0 10px;
+  font-size:22px;
+  font-weight:700;
+  color:inherit
 }
 
-article > p:first-of-type::first-letter{
-  font-family: "Times New Roman", Times, serif;
-  font-size: 36px;
-  line-height: 1;
-  float: left;
-  padding-right: 8px;
-  padding-top: 2px;
+article>p:first-of-type::first-letter{
+  font-family:"Times New Roman",Times,serif;
+  font-size:36px;
+  line-height:1;
+  float:left;
+  padding-right:8px;
+  padding-top:2px
 }
 
 article a{
-  color: #1a0dab;
-  text-decoration: underline;
+  color:#1a0dab;
+  text-decoration:underline
 }
 
 article a[href*="google.com"]::after{
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
-  vertical-align: -2px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png");
+  content:"";
+  display:inline-block;
+  width:16px;
+  height:16px;
+  margin-left:8px;
+  vertical-align:-2px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png")
 }
 
 article:hover{
-  color: #111;
-  max-height: 900px;
+  color:#111;
+  max-height:900px
 }
 
 #thanks{
-  text-align: center;
-  margin: 10px 0 30px;
+  text-align:center;
+  margin:10px 0 30px
 }
 
 footer{
-  padding: 20px 0 30px;
-  text-align: center;
-  border-top: 2px solid #ddd;
+  padding:20px 0 30px;
+  text-align:center;
+  border-top:2px solid #ddd
 }
 
 footer address{
-  font-style: normal;
+  font-style:normal
 }
+
